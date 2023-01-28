@@ -3,9 +3,11 @@ def calculatePay():
     print("calculating pay")
     # This first line is provided for you
     hrs = input("Enter Hours:")
+    Time= int(hrs)
     rate = input("Enter Rate:")
-    pay = int(hrs) * int(rate)
-    print(pay)
+    Wage=float(rate)
+    pay = Time * Wage
+    print( 'Calculated Pay',pay)
     # end assignment
 
 
