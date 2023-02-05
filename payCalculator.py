@@ -7,7 +7,16 @@ def calculatePay():
 
     pay = hrs * rate
 
-    print(pay)
+    if hrs > 40:
+        othours = float(hrs - 40) 
+        otrate = float(.5 * rate)
+        otpay = float(othours * otrate) 
+
+        totalpay = float(pay + otpay)
+        print(totalpay)
+
+    if hrs <= 40:
+        print (pay)
     
     # end assignment
 
